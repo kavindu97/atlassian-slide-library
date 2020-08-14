@@ -1,0 +1,71 @@
+.searchBar {
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+@media screen and (max-width: 1300px) {
+  .searchBar {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .searchBar {
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .searchBar {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .searchBar {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .searchBar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.searchButton {
+  margin-right: 131px;
+}
+
+@media screen and (max-width: 1300px) {
+  .searchButton {
+    margin-right: 134px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .searchButton {
+    margin-right: 138px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .searchButton {
+    margin-right: 142px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .searchButton {
+    margin-right: 146px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .searchButton {
+    margin-right: 150px;
+  }
+}
