@@ -3,26 +3,30 @@ import './SideLinks.css';
 import {Row} from 'react-bootstrap'
 import {Container} from 'react-bootstrap'
 import {Col} from 'react-bootstrap'
+import  FolderDialog from './FolderDialog'
 
 export class SideLinks extends React.Component {
+
+  
+  
+  fileSelectedHandler = event => {
+    console.log(event.target.files[0]);
+  }
+
   render() {
     return (
           <div className="sideLinks">
             <header className="App-header">
             <Container>
               <Row>
-                <Col sm={6.5}>
-                  <span class="btn default btn-file">
-                      <span class="fileinput-new">
-                        Upload your slides
-                      </span>
-                      <input type="file" class="textbox wp95 fl fileupload fileInput" name="files" id="fileupload"/>
-                  </span>
+                <Col xs={8}></Col>
+                <Col>
+                  <label for="file_input_id">Upload your slide</label>
+                  <input type="file" id="file_input_id" 
+                      accept= "application/vnd.ms-powerpoint,text/plain" onChange={this.fileSelectedHandler}/>
                 </Col>
-                <Col sm={5.5}>
-                  <span class="btn default btn-file">
-                    <a href="https://www.w3schools.com">User Guid</a>
-                  </span>
+                <Col>
+                  <a href="">User Guide</a>
                 </Col>
               </Row>
             </Container>
